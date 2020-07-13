@@ -1,0 +1,105 @@
+{
+  "platforms": [
+    {
+      "applicationKey": {
+        "version": "1.0.0",
+        "clientPlatform": "ios",
+        "bundleId": "com.demo.push.d"
+      },
+      "displayName": "SampleAppIos",
+      "scopeElementMapping": {
+        "push.mobileclient": "",
+        "liveupdate.mobileclient": ""
+      }
+    }
+  ],
+  "services": [
+    {
+      "name": "push",
+      "settings": {
+        "apns": {
+          "certificate": "sandbox.p12",
+          "isSandBox": true,
+          "password": "sandbox"
+        }
+      },
+      "tags": [
+        {
+          "name": "Tag1",
+          "description": "Abt Tag1"
+        },
+        {
+          "name": "Tag2",
+          "description": "Abt Tag2"
+        }
+      ]
+    },
+    {
+      "name": "liveupdate",
+      "schema": {
+        "features": {
+          "enableButton": {
+            "name": "enableButton",
+            "internalId": "enableButton",
+            "description": "Show the feature button",
+            "defaultValue": false
+          }
+        },
+        "properties": {
+          "titleColour": {
+            "name": "titleColour",
+            "internalId": "titleColour",
+            "description": "Change colour of the title",
+            "defaultValue": "black"
+          }
+        }
+      }
+    },
+    {
+      "name": "analytics"
+    }
+  ],
+  "adapters": [
+    {
+      "adapter": "TestAdapter",
+      "connectivity": {
+        "http": {
+          "connectionTimeoutInMilliseconds": 30000,
+          "cookiePolicy": "BEST_MATCH",
+          "dtdvalidationEnabled": false,
+          "maxConcurrentConnectionsPerNode": 49,
+          "maxRedirects": 11,
+          "port": 444,
+          "protocol": "http",
+          "socketTimeoutInMilliseconds": 30002
+        }
+      }
+    }
+  ],
+  "backendServices": [
+    {
+      "service": "resorts",
+      "baseUrl": "http://mybluemix.net/resorts",
+      "auth": {
+        "type": "basic",
+        "credential": {
+          "username": "user",
+          "password": "pass"
+        }
+      },
+      "ConnectionProperties": {
+        "maxConnetions": "50",
+        "connectionTimeoutInMilliseconds": "20000",
+        "socketTimeoutInMilliseconds": "20000"
+      }
+    }
+  ],
+  "confidentialClients": [
+    {
+      "id": "SampleClient",
+      "secret": "12345",
+      "allowedScope": "clients:read-public clients:read-protected update",
+      "displayName": "SampleClient"
+    }
+  ]
+}
