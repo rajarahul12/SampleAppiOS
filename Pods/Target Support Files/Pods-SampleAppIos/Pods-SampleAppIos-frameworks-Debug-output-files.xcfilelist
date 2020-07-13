@@ -1,0 +1,3 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFirstPlatformFoundation.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFoundationSwift.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBMMobileFirstPlatformFoundationLiveUpdate.framework

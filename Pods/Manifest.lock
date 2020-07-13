@@ -1,0 +1,26 @@
+PODS:
+  - IBMMobileFirstPlatformFoundation (8.0.2020060717)
+  - IBMMobileFirstPlatformFoundationLiveUpdate (8.0.202005041257):
+    - IBMMobileFirstPlatformFoundation (~> 8.0)
+  - IBMMobileFirstPlatformFoundationPush (8.0.2019082914):
+    - IBMMobileFirstPlatformFoundation (~> 8.0)
+
+DEPENDENCIES:
+  - IBMMobileFirstPlatformFoundation
+  - IBMMobileFirstPlatformFoundationLiveUpdate
+  - IBMMobileFirstPlatformFoundationPush
+
+SPEC REPOS:
+  trunk:
+    - IBMMobileFirstPlatformFoundation
+    - IBMMobileFirstPlatformFoundationLiveUpdate
+    - IBMMobileFirstPlatformFoundationPush
+
+SPEC CHECKSUMS:
+  IBMMobileFirstPlatformFoundation: 2fd46cd05bdb7cc072eb003148aa6571a143e321
+  IBMMobileFirstPlatformFoundationLiveUpdate: 77e0483cc7b8a67f42e5324374f3fa8d861aa61c
+  IBMMobileFirstPlatformFoundationPush: bcc4d7d3bbde63f140a03c8fd68ebbc536edb0ad
+
+PODFILE CHECKSUM: 029626ac8d3b4698ab0f579caabf35e0a11f745a
+
+COCOAPODS: 1.8.4
